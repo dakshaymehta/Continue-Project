@@ -47,9 +47,10 @@ def get_top_n(predictions, n=3):
     return top_n
 
 # Get top 3 recommendations for each user given after this point 
-
+#this was given by continue
 top_n = get_top_n(predictions, n=3)
 
+#this is was given by continue
 
 for uid, user_ratings in top_n.items():
     print(f"Recommended items for user {uid}: {', '.join([str(iid) for iid, _ in user_ratings])}")
